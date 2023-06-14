@@ -35,11 +35,13 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
 
+        <!-- aos-liberary------------------------------------------- -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
          <!-- bootstrap css -->
-   <link rel="stylesheet"  href="css/bootstrap.min.css">
+   <link rel="stylesheet"  href="assets/css/bootstrap.min.css">
    <!-- style css -->
-   <link rel="stylesheet"  href="css/style.css">
+   <link rel="stylesheet"  href="assets/css/style.css">
 </head>
 
 <body>
@@ -49,48 +51,48 @@
 
 
    <!-- header section start -->
-   <header>
-      <nav class="navbar navbar-expand-lg shadow">
-         <div class="container-fluid">
-            
-           <a class="navbar-brand" href="#"><img src="images/اجيال المملكة.png" alt="" class=""></a>
-      
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-               
-            <i class="fas fa-bars navbar-toggler-icon "></i> 
-           </button>
-           <div class="collapse navbar-collapse bg-white" id="navbarNav">
-             <ul class="navbar-nav m-auto">
-               <li class="nav-item">
-                 <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="services.html">الخدمات</a>
-               </li>
-   
-               <li class="nav-item">
-                  <a class="nav-link" href="index.html#about-us">من نحن</a>
-                </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="index.html#why-us">لماذا نحن</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link " href="contact.html">تواصل معنا</a>
-               </li>
-             </ul>
-           </div>
-         </div>
-       </nav>
-   </header>
+ <!-- start header section -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary  shadow-lg ">
+   <div class="container">
+      <h1>
+     <a class="navbar-brand" href="#">
+        <img class="" src="assets/images/اجيال المملكة.png" alt=""class="nav-logo"></a>
+        </h1>
+     <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       
+       <i class="fas fa-bars navbar-toggler-icon "></i> 
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav m-auto ">
+         <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">الخدمات</a>
+          </li>
+
+          <li class="nav-item">
+             <a class="nav-link" href="index.html#about-us">من نحن</a>
+           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#why-us">لماذا نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="contact.html">تواصل معنا</a>
+          </li>
+       </ul>
+     </div>
+   </div>
+ </nav>   
 
    
 
-   <section class="contact-banner"></section>
+   <section class="contact-banner "></section>
 
 
 
-   <div class="phone cta">اتصل بنا </div>
-   <div class="phone number">0556672827+  </div>
+   <!-- <div class="phone cta">اتصل بنا </div>
+   <div class="phone number">0556672827+  </div> -->
 
    <section class="map">
       <div class="container">
@@ -118,6 +120,30 @@
          </div>
       </div>
    </section>
+
+     <!-- fixed-btns--------------------------------------------- -->
+
+  <div class="contact">
+   <div class="d-flex flex-column justify-content-center ">
+   <div class="whatsUp contact-way d-flex justify-content-around  align-items-center ">
+      <p>واتس أب</p>
+      <a href="https://api.whatsapp.com/send?phone=+0556672827&text=اهلا بك كيف اساعدك اليوم" class="" target="_blank">
+      
+         <i class="fa-brands fa-whatsapp"></i>
+      
+         </a>
+   </div>
+
+ <div class="phone contact-way d-flex justify-content-around align-items-center ">
+   <p class=""> اتصل بنا</p>
+      <a href="https://api.whatsapp.com/send?phone=+0556672827&text=اهلا بك كيف اساعدك اليوم" class="" target="_blank">
+      
+         <i class="fa-solid fa-phone "></i>
+         </a>
+   </div> 
+
+</div></div>
+
 
 <style>
    @import url('https://fonts.googleapis.com/css?family=Quicksand');
@@ -189,10 +215,12 @@
       </div>
    </div>
    <!-- copyright section end -->
+      <!-- aos-liberary -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <!-- Javascript files-->
    <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
+   <!-- <script src="js/popper.min.js"></script> -->
+
    <script src="js/jquery-3.0.0.min.js"></script>
    <script src="js/plugin.js"></script>
    <!-- sidebar -->
@@ -201,6 +229,12 @@
    <!-- javascript -->
    <script src="js/owl.carousel.js"></script>
    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+   <script>
+      AOS.init();
+    </script>
+         <script src="assets/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
