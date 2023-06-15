@@ -251,12 +251,16 @@ ul{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     margin-top: 8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
   
     /* margin-top: 8rem; */
 }
+
 .carousel-item h1{
     text-align: center !important;
     color : #fff !important ;
@@ -352,12 +356,16 @@ footer img{
     width: 75% !important;
   
   }
-
+  .banner .carousel-control-prev{
+    left: -1rem;
+  }
+  .banner .carousel-control-next{
+    right: -1rem;
+  }
   .banner #carouselExampleControls p{
-    /* position: absolute;
-    top: 30%; */
+ 
     margin: 1rem;
-    /* transform: translate(-50%); */
+
   
   }
 
@@ -367,6 +375,9 @@ footer img{
         margin-left: 0 !important;
         margin-right: 0 !important;
         height: 60vh;
+        border: 1px solid #fff ;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
       
       }
   }
@@ -410,7 +421,7 @@ footer img{
 .banner .carousel{
     color : #fff;
     font-weight: 600;
-    border: 1px solid #fff ;
+ 
     border-radius: 0.5rem;
     padding: 1rem;
     margin: 1rem;
@@ -427,7 +438,7 @@ footer img{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
     }
   
     .banner .carousel p{
@@ -655,18 +666,12 @@ footer img{
     float: left;
 }
 
-
-
-
 /* choose section end */
 
 /* contact section start */
 
-
-
 .about-services{
     padding-top: 14rem;
-    
 }
 .about-services h3{
     font-size: 2rem;
@@ -820,7 +825,7 @@ height:50vh;
 
 .contact .whatsUp{
     position: fixed;
-    bottom: 9rem;
+    bottom: 8rem;
     left:0;
     z-index: 88999;
     
@@ -831,6 +836,12 @@ height:50vh;
     width: 14rem;
     border-radius: 1.75rem;
     transition: 1s all;
+}
+@media (min-width:300px) and (max-width:429px){
+    .contact .contact-way{
+        padding: 0.2rem 1.25rem;
+        width: 10rem;
+    }
 }
 .contact .contact-way:hover{
     background-color: #9b764d;
@@ -856,7 +867,7 @@ height:50vh;
 }
 @media(max-width:992px){
     .contact .contact-way{
-        width: 35%;
+        width: 9rem;
         padding: 0.2rem 1.5rem;
     }
     .contact .contact-way  i{
