@@ -1,4 +1,8 @@
-
+$(document).ready(function(){
+    $('#carouselExampleControls').carousel({
+      interval: 5000
+    });
+  });
 
 
 let imgs=document.querySelectorAll(".col-md-4 img")
@@ -82,6 +86,4 @@ if(currentIndex==arr.length){
 
 }
 
-const carousel = document.querySelector('#carouselExampleIndicators');
-const carouselInterval = 3000; // Change every 3 seconds
 

@@ -221,6 +221,11 @@ ul{
     transition: 1s all ;
     color: #000 !important ;
 }
+@media (max-width:992px){
+    .navbar a{
+        margin-right: 2rem !important;
+    }
+}
 .navbar a:hover{
     color: var(--main-color) !important;
 }
@@ -248,6 +253,7 @@ ul{
     flex-direction: column;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    margin-top: 8rem;
   
     /* margin-top: 8rem; */
 }
@@ -257,29 +263,50 @@ ul{
 }
 .contact-banner{
     background-image: url('../images/contact-us2.jpeg');
-    background-size: cover;
+    background-size:cover;
     /* background-position: center; */
     background-repeat: no-repeat;
-    height: 240vh;
+    height: 100vh;
     margin-top: 2rem;
+    object-fit: content;
+    width: 100%;
+    
 }
 .service-banner{
     background-image: url("../images/contact-us.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200vh;
+    height: 100vh;
     background-position: center;
 }
-.slider{
+.slider-section{
     background-image: url('../images/about-company.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: center left; */
-    height: 70vh;
+    height: 80vh;
     position: relative;
     z-index: 888888;
+    object-fit: content;
+    /* background-attachment: fixed; */
 }
-.slider .layer{
+.contact-btn a{
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 700;
+    padding: 0.75rem 2rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+footer img{
+    width: 25%;
+}
+@media(max-width:992px){
+    footer  img{
+        width: 70% !important;
+    }
+}
+.slider-section .layer{
     position: absolute;
     top: 0;
     left: 0;
@@ -291,6 +318,7 @@ ul{
 .carousel{
     color: #fff;
 }
+
 @media (max-width:567px){
     .contact-banner{
         background-size: contain;
@@ -300,15 +328,52 @@ ul{
         background-size: contain;
         height: 80vh;
     }
-    .slider{
+    .slider-section{
         background-size: contain;
         height:30vh;
     }
 }
+.banner h1{
+    font-size: 3rem;
+    font-weight: 700;
+    /* line-height: 1.8; */
+}
+.banner h2{
+    font-size: 2rem !important;
+    
+}
+.banner .carousel-item p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .banner #carouselExampleControls{
+    height: 40vh;
+    width: 75% !important;
+  
+  }
+
+  .banner #carouselExampleControls p{
+    /* position: absolute;
+    top: 30%; */
+    margin: 1rem;
+    /* transform: translate(-50%); */
+  
+  }
+
+  @media (max-width:567px){
+    .banner #carouselExampleControls{
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        height: 60vh;
+      
+      }
+  }
 .banner .our-offers{
 
     background-color: rgb(158, 122, 67);
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     border-radius:1rem;
     color : #fff;
     text-align: center;
@@ -364,9 +429,7 @@ ul{
         align-items: center;
         padding-top: 2rem;
     }
-    /* .banner .our-offers{
-       width: 75% !important;
-    } */
+  
     .banner .carousel p{
         line-height: 1.8;
     }
@@ -461,10 +524,7 @@ ul{
     text-align: center;
     
 }
-/* .about-us h2{
-    margin: 4rem;
-    color: red;
-} */
+
 .about-us .about-content{
      background-color: #fff;
      padding: 1rem;
@@ -501,15 +561,12 @@ ul{
 
 }
 .why-us h3{
-    /* color: var(--main-color); */
-    /* font-size: 2rem; */
+
     font-weight: 700;
     margin-bottom: 2rem;
     text-align: justify;
 }
-/* .why-us .title{
-    border: 2px solid var(--main-color);
-} */
+
 .why-us i{
     font-size: 1.5rem;
     padding: 0.5rem;
@@ -535,9 +592,7 @@ ul{
     padding: 8rem 2rem
   
 }
-.about_section{
 
-}
 .about_section h1{
     margin:  2rem;
 }
@@ -607,64 +662,7 @@ ul{
 
 /* contact section start */
 
-.contact_section {
-    width: 100%;
-    float: left;
-    padding-bottom: 90px;
-}
-.contact_taital {
-    width: 100%;
-    float: left;
-    font-size: 40px;
-    color: #363636;
-    text-align: center;
-    font-weight: bold;
-}
-.email_text {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 120px;
-}
-.email-bt {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #393838;
-    margin-bottom: 20px;
-    padding: 10px 15px;
-    border: 0px;
-    border: 1px solid #2b2278 !important;
-}
-.massage-bt {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #393838;
-    margin-bottom: 20px;
-    padding: 10px 15px;
-    border: 0px;
-    border: 1px solid #2b2278 !important;
-}
-.send_btn {
-    width: 170px;
-    margin: 0 auto;
-    text-align: center;
-}
-.send_btn a {
-    width: 100%;
-    float: right;
-    text-align: center;
-    font-size: 20px;
-    color: #ffffff;
-    border-radius: 30px;
-    background-color: #000d10;
-    padding: 7px;
-}
-.send_btn a:hover {
-    color: #ffffff;
-    background-color: #2b2278;
-} */
+
 
 .about-services{
     padding-top: 14rem;
@@ -674,13 +672,13 @@ ul{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 3rem;
-    /* margin-top: 3rem; */
+
 }
 .about-services h2{
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 3.5rem;
-    /* margin-top: 2rem; */
+
 }
 .about-services p{
     line-height: 1.7;
@@ -690,7 +688,7 @@ ul{
 }
 .about-services .row{
     padding-top: 4rem !important;
-    /* margin-bottom: 4rem !important; */
+
 }
 .about-services .col-lg-6{
     margin-bottom: 2rem !important;
@@ -713,9 +711,12 @@ ul{
  
     height: 70vh !important;
 }
+/* start work-gallery-section */
+
 .work-gallery {
     position: relative;
     z-index: 88;
+    background-color: #d4c9ab;
 }
 .work-gallery::after{
     content: "";
@@ -725,10 +726,10 @@ ul{
     right: 0;
     border-radius: 50%;
     background-color: #d4ccb5;
-    /* z-index: -1; */
+
 }
 .work-gallery {
-    padding-top: 2rem;
+    padding: 8rem 2rem;
 }
 .work-gallery img{
     background-color: #d4c9ab;
@@ -819,21 +820,26 @@ height:50vh;
 
 .contact .whatsUp{
     position: fixed;
-    bottom: 8rem;
-    left:3rem;
-    z-index: 889;
+    bottom: 9rem;
+    left:0;
+    z-index: 88999;
     
 }
 .contact .contact-way{
     background-color: rgb(196, 165, 109);
-    padding: 0.25rem 2rem;
-    width: 10%;
-    border-radius: 1.5rem;
+    padding: 0.25rem 1.5rem;
+    width: 14rem;
+    border-radius: 1.75rem;
+    transition: 1s all;
 }
-
+.contact .contact-way:hover{
+    background-color: #9b764d;
+    cursor: pointer;
+}
 .contact .contact-way  i{
     font-size: 3rem;
     font-weight: 700;
+    margin-right: 0.5rem;
     color: #fff;
 }
 .contact .contact-way p{
@@ -845,8 +851,8 @@ height:50vh;
 .contact .phone{
     position: fixed;
     bottom: 2rem;
-    left:3rem;
-    z-index: 88889;
+    left:0;
+    z-index: 88999;
 }
 @media(max-width:992px){
     .contact .contact-way{
@@ -890,25 +896,22 @@ height:50vh;
   }
 /* footer section end */
 
-.copyright_section {
-    width: 100%;
-    float: left;
+footer {
+ 
     background-color: rgb(107, 75, 37);
     height: auto;
     padding: 3rem;
 }
-.copyright_section p{
+footer p{
      font-size: 1.5rem;
      font-weight: bold;
      line-height: 1.7;
 }
 .copyright_text {
     width: 100%;
-    float: left;
+
     color: #ffffff;
     text-align: center;
-    font-size: 16px;
-    margin-left: 0px;
 }
 
 .copyright_text a {
@@ -916,5 +919,13 @@ height:50vh;
 }
 
 .copyright_text a:hover {
-    color: #9b764d;
+    color: #a08668;
+}
+
+
+.visible{
+    display: block;
+}
+.hidden{
+    display: none;
 }
