@@ -237,7 +237,12 @@ ul{
   .navbar img{
     width: 6rem;
     height: 6rem;
-    margin-top: 0.5rem;
+  }
+  @media (max-width:768px){
+    .navbar img{
+        width: 4.5rem;
+        height: 4.5rem;
+      }
   }
 /* start banner section ------------------------ */
 .banner{
@@ -253,11 +258,15 @@ ul{
     flex-direction: column;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    margin-top: 8rem;
+    margin-top: 7.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
+@media (max-width:430px){
+    .banner{
+        height: 105vh
+    }
+}
 .carousel-item h1{
     text-align: center !important;
     color : #fff !important ;
@@ -465,6 +474,11 @@ ul{
   
     .banner .carousel p{
         line-height: 1.8;
+    }
+}
+@media (max-width: 770px){
+    .banner{
+        margin-top: 6rem;
     }
 }
 /* banner section end */
