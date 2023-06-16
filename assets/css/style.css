@@ -239,7 +239,7 @@ ul{
     height: 6rem;
     margin-top: 0.5rem;
   }
-
+/* start banner section ------------------------ */
 .banner{
     height:100vh;
     background-image: url('../images/herosection.jpg');
@@ -256,9 +256,6 @@ ul{
     margin-top: 8rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    
-  
-    /* margin-top: 8rem; */
 }
 
 .carousel-item h1{
@@ -268,7 +265,6 @@ ul{
 .contact-banner{
     background-image: url('../images/contact-us2.jpeg');
     background-size:cover;
-    /* background-position: center; */
     background-repeat: no-repeat;
     height: 100vh;
     margin-top: 2rem;
@@ -287,12 +283,11 @@ ul{
     background-image: url('../images/about-company.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center left; */
-    height: 80vh;
+    background-position: center center;
+    height: 70vh;
     position: relative;
-    z-index: 888888;
+    z-index: 8888;
     object-fit: content;
-    /* background-attachment: fixed; */
 }
 .contact-btn a{
     background-color: var(--main-color);
@@ -301,15 +296,14 @@ ul{
     padding: 0.75rem 2rem;
     border-radius: 0.75rem;
     margin-bottom: 1rem;
+    transition: 1s all;
+    margin-top: 3rem;
 }
-footer img{
-    width: 25%;
+.contact-btn a:hover{
+    background-color: rgb(182, 136, 44);
+
 }
-@media(max-width:992px){
-    footer  img{
-        width: 70% !important;
-    }
-}
+
 .slider-section .layer{
     position: absolute;
     top: 0;
@@ -333,8 +327,7 @@ footer img{
         height: 80vh;
     }
     .slider-section{
-        background-size: contain;
-        height:30vh;
+        height:50vh;
     }
 }
 .banner h1{
@@ -354,6 +347,7 @@ footer img{
   .banner #carouselExampleControls{
     height: 40vh;
     width: 75% !important;
+    border: 1px solid #fff ;
   
   }
   .banner .carousel-control-prev{
@@ -361,6 +355,34 @@ footer img{
   }
   .banner .carousel-control-next{
     right: -1rem;
+    /* padding-right: 1rem !important;
+    margin-right: 1rem !important; */
+  }
+  .banner .carousel-control-next .carousel-control-next-icon{
+    margin: 2rem;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    opacity: 0.9 !important;
+  }
+  .banner .carousel-control-prev .carousel-control-prev-icon{
+    margin: 2rem;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    opacity: 0.9 !important;
+  }
+  @media (max-width: 768px){
+    .banner .carousel-control-next .carousel-control-next-icon{
+        margin: 1rem;
+        width: 1.9rem !important;
+        height: 1.9rem !important;
+        
+      }
+      .banner .carousel-control-prev .carousel-control-prev-icon{
+        margin: 1rem;
+        width: 1.9rem !important;
+        height: 1.9rem !important;
+     
+      }
   }
   .banner #carouselExampleControls p{
  
@@ -430,7 +452,7 @@ footer img{
 .banner .carousel p{
     line-height: 1.8;
     font-size: 1.25rem;
-    /* text-align: center; */
+
 }
 @media (max-width:992px){
   
@@ -438,7 +460,7 @@ footer img{
         display: flex;
         justify-content: center;
         align-items: center;
-        /* padding-top: 2rem; */
+
     }
   
     .banner .carousel p{
@@ -827,7 +849,7 @@ height:50vh;
     position: fixed;
     bottom: 8rem;
     left:0;
-    z-index: 88999;
+    z-index: 889999998999;
     
 }
 .contact .contact-way{
@@ -885,12 +907,13 @@ height:50vh;
         position: fixed;
         bottom: 8rem;
         left:1.5rem;
-        z-index: 889;
+        /* z-index: 889; */
     }    
     .contact .phone{
         position: fixed;
         bottom: 2rem;
         left:1.5rem;
+        /* z-index: 889; */
     }
 }
 
@@ -912,6 +935,14 @@ footer {
     background-color: rgb(107, 75, 37);
     height: auto;
     padding: 3rem;
+}
+footer img{
+    width: 35%;
+}
+@media(max-width:992px){
+    footer  img{
+        width: 80% !important;
+    }
 }
 footer p{
      font-size: 1.5rem;
