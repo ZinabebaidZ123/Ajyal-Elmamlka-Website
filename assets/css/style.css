@@ -418,7 +418,7 @@ ul{
 
   @media (max-width:567px){
     .banner{
-        padding-top: 9rem;
+        padding-top: 7rem;
     }
     .banner #carouselExampleControls{
         width: 100% !important;
