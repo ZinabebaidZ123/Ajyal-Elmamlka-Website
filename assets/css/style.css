@@ -76,6 +76,21 @@ h2::after{
     margin-bottom: 2rem;
     background-color: var(--main-color);
 }
+h1{
+    position: relative;
+}
+/* h1::after{
+    content: "";
+    position: absolute;
+    top: 4.5rem;
+    margin-bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    height: 2px  ;
+    margin-bottom: 2rem;
+    background-color: var(--main-color);
+} */
 
 a {
     color: #1f1f1f;
@@ -172,32 +187,7 @@ section{
    
 }
 
-/* @media (min-width:567px) {
-    html{
-          font-size: 13px;
-    }
-    img{
-        width: 70%;
-    }
-   
-}
-@media (min-width:768px){
-    html{
-        font-size: 15px;
-    }
-    img{
-        width: 80%;
-    }
-  
-}
-@media (min-width:992px){
-    html{
-        font-size: 16px;
-    }
-    img{
-        width: 100%;
-    }
-} */
+
 ul{
   list-style: none;
 }
@@ -210,19 +200,26 @@ ul{
     top:0;
     left: 0;
     z-index: 99999999999999 !important;
-    background-color: #fff !important;
+    background-color: rgb(124, 80, 26) !important;
     width: 100%;
 
+    
   }
+@media (min-width:992px){
+    .navbar{
+        max-height: 6rem !important;
+    }
+}
+
   .navbar   a {
     font-size: 1.2rem !important;
     margin-left: 1rem !important;
     font-weight: 700 !important;
     transition: 1s all ;
-    color: #000 !important ;
+    color: #fff!important ;
 }
 @media (max-width:992px){
-    .navbar a{
+    .navbar .nav-item a{
         margin-right: 2rem !important;
     }
 }
@@ -232,16 +229,16 @@ ul{
   .navbar .navbar-toggler{
     color: var(--dark-color);
     font-size: 2rem;
+    color:#fff !important;
  
   }
   .navbar img{
-    width: 6rem;
-    height: 6rem;
+      width: 9rem;
   }
   @media (max-width:768px){
     .navbar img{
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 5.5rem;
+        /* height: .5rem; */
       }
   }
 /* start banner section ------------------------ */
@@ -272,6 +269,12 @@ ul{
         background-size:contain;
     }
    
+}
+@media(min-width:992px){
+    .banner{
+        margin-top: 6rem;
+
+    }
 }
 .carousel-item h1{
     text-align: center !important;
@@ -315,25 +318,7 @@ ul{
     z-index: 8888;
     object-fit: content;
 }
-/* .service-layer{
-    background-image: url('../images/img1.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center left;
-    height: 60vh;
-    position: relative;
-    z-index: 8888;
-    object-fit: content;
-}
-.service-layer .layer{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.7);
-    z-index: -1; */
-/* } */
+
 .contact-btn a{
     background-color: var(--main-color);
     color: #fff;
@@ -390,7 +375,7 @@ ul{
     text-align: justify;
   }
   .banner #carouselExampleControls{
-    height: 40vh;
+    height: 45vh;
     width: 75% !important;
     border: 1px solid #fff ;
   
@@ -430,23 +415,32 @@ ul{
   }
   .banner #carouselExampleControls p{
  
-    margin: 1rem;
+    margin: 0.5rem;
 
   
   }
-
+@media(min-width:992px){
+    .banner #carouselExampleControls h1{
+        margin-top: 2rem;
+    }
+    .banner #carouselExampleControls h2{
+        margin-top: 2rem ;
+    }
+}
   @media (max-width:567px){
     .banner #carouselExampleControls{
         width: 100% !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
-        height: 60vh;
+        height: 70vh;
         border: 1px solid #fff ;
         padding-left: 1rem !important;
         padding-right: 1rem !important;
+        padding-bottom: 1rem !important;
       
       }
   }
+  /* @media(max-width:3) */
 .banner .our-offers{
 
     background-color: rgb(158, 122, 67);
@@ -454,8 +448,7 @@ ul{
     border-radius:1rem;
     color : #fff;
     text-align: center;
-    /* width: 75%; */
-    /* width: 90%; */
+  
 }
 .banner .contact-info{
   border:1px solid #fff;
@@ -497,6 +490,19 @@ ul{
     line-height: 1.8;
     font-size: 1.25rem;
 
+}
+@media (min-width:992px){
+    .banner .carousel p{
+        /* line-height: 1.8; */
+        font-size: 1.5rem;
+    
+    }
+    .banner .carousel-item {
+   
+    }
+    .banner .carousel-item p{
+      
+    }
 }
 @media (max-width:992px){
   
@@ -905,7 +911,7 @@ height:50vh;
     
 }
 .contact .contact-way{
-    background-color: rgb(196, 165, 109);
+    background-color: rgb(158, 122, 67);
     padding: 0.25rem 1.5rem;
     width: 14rem;
     border-radius: 1.75rem;
@@ -918,7 +924,7 @@ height:50vh;
     }
 }
 .contact .contact-way:hover{
-    background-color: #9b764d;
+    background-color: #c09461;
     cursor: pointer;
 }
 .contact .contact-way  i{
@@ -969,7 +975,7 @@ height:50vh;
     }
 }
 
-.carousel-item {
+/* .carousel-item {
     height: 500px;
   }
   
@@ -979,17 +985,18 @@ height:50vh;
   
   .carousel-item p {
     font-size: 1.5rem;
-  }
+  } */
 /* footer section end */
 
 footer {
  
-    background-color: rgb(107, 75, 37);
+    /* background-color: rgb(107, 75, 37); */
+    background-color: rgb(124, 80, 26) !important;
     height: auto;
-    padding: 3rem;
+    padding-bottom: 1rem;
 }
 footer img{
-    width: 35%;
+    width: 25%;
 }
 @media(max-width:992px){
     footer  img{
