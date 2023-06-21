@@ -255,7 +255,8 @@ ul{
 }
 @media(max-width:567px){
     .banner{
-        background-size:contain;
+        /* background-size:contain; */
+        background-position: center;
     }
    
 }
@@ -341,10 +342,7 @@ ul{
 }
 
 @media (max-width:567px){
-    .contact-banner{
-        background-size: contain;
-        height: 46vh;
-    }
+
     .service-banner{
         background-size: contain;
         height: 80vh;
